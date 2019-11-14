@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>{{ pokemon.name }}</title>
+  </head>
+  <body>
+    <table>
+     <tr>
+       <th>name: </th><td>{{ pokemon.name }}</td>
+     </tr>
+     <tr>
+       <th>category: </th><td>{{ pokemon.category }}</td>
+     </tr>
+     <tr>
+       <th>height: </th><td>{{ pokemon.height() | round(2) }} m</td>
+     </tr>
+     <tr>
+       <th>weight: </th><td>{{ pokemon.weight() | round(2) }} kg</td>
+     </tr>
+    </table>
+  </body>
+</html>

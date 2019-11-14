@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Pokedex</title>
+  </head>
+  <body>
+    <section>
+      <h2>Have you seen any pokemon recently?</h2>
+      <form class="" action="/" method="post">
+        <table>
+         <tr>
+           <th>Name</th><td><input type="text" name="name" value="" /></td>
+         </tr>
+         <tr>
+           <th>Category </th><td><input type="text" name="category" value="" /></td>
+         </tr>
+         <tr>
+           <th>Height </th><td><input type="text" name="height_ft" value="" /> ft</td>
+         </tr>
+         <tr>
+           <th>Weight </th><td><input type="text" name="weight_lbs" value="" /> lbs</td>
+         </tr>
+         <tr>
+           <th></th><td><input type="submit" name="" value="Add new Pokemon" /></td>
+         </tr>
+        </table>
+
+
+      </form>
+      <hr>
+    </section>
+    <section>
+      <h2>Pokedex:</h2>
+
+      <table border="1px">
+        <tr>
+          <th>name</th>
+          <th>category</th>
+          <th>height(ft)</th>
+          <th>weight(lbs)</th>
+        </tr>
+        {% for p in pokemon %}
+          <tr>
+           <td>{{ p.name }}</td>
+           <td>{{ p.category }}</td>
+           <td>{{ p.height_ft }}</td>
+           <td>{{ p.weight_lbs }}</td>
+         </tr>
+
+        {% endfor %}
+    </table>
+
+    </section>
+  </body>
+</html>
