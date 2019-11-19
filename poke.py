@@ -64,6 +64,6 @@ if __name__ == '__main__':
     # db.create_all()
 
     # ==> use db.drop_all() to remove model
-    # ==> use db.crete_all() to create schema
+    # ==> use db.create_all() to create schema
 
     app.run()
